@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+</head>
+<body>
+    <div>
+        <h1>Add Task</h1>
+        <div>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div>
+                    <label for="title" name="title">Title</label>
+                    <input type="text" name="title" id="title-inp">
+                </div>
+                <div>
+                    <label for="descrip" name="descrip">Description</label>
+                    <input type="text" name="descrip" id="descrip-inp">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
